@@ -14,9 +14,12 @@ function App() {
 
   return (
     <DataContext.Provider value={{username, loggedIn, setLoggedIn, setUsername}}>
+      <div className = 'app'>
+
       <h1>Learning React Context</h1>
       {loggedIn? 'Logged In' : 'Logged Out'}
       <ComponentA />
+      </div>
     </DataContext.Provider>
     
   );
